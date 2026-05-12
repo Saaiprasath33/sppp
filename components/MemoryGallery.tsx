@@ -87,8 +87,9 @@ function PolaroidCard({
                 animate={{ scale: [1, 1.08, 1] }}
                 transition={{ duration: 2.5, repeat: Infinity, delay: index * 0.3 }}
               >
-                {mem.emoji}
+                {(mem as any).emoji}
               </motion.div>
+
               <span
                 style={{
                   fontSize: "0.65rem",
